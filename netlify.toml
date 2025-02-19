@@ -1,0 +1,6 @@
+[[redirects]]
+from = "/*"
+to = "/fblog.html"
+status = 200
+
+

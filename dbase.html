@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stored Logins</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="logo">Stored Logins</h1>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Password</th>
+          </tr>
+        </thead>
+        <tbody id="userData"></tbody>
+      </table>
+      <br />
+      <button onclick="clearData()">Clear All Data</button>
+      <br /><br />
+      <a href="fblog.html">Back to Login</a>
+    </div>
+
+    <script src="dbase.js"></script>
+    <!-- External JS for database -->
+  </body>
+</html>
