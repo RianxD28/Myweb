@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
@@ -7,31 +8,47 @@ body {
   height: 100vh;
   flex-direction: column;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
+/* Container */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
 }
+
+/* Logo */
 .logo {
   color: #1877f2;
   font-size: 48px;
   font-weight: bold;
-  margin: 0;
 }
+
+/* Subtext */
 .subtext {
   font-size: 18px;
   color: #606770;
   margin-bottom: 20px;
+  text-align: center;
 }
+
+/* Login Box */
 .login-box {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   text-align: center;
 }
+
+/* Input Fields */
 .login-box input {
   width: 91%;
   padding: 12px;
@@ -40,6 +57,8 @@ body {
   border-radius: 5px;
   font-size: 16px;
 }
+
+/* Login Button */
 .login-btn {
   width: 100%;
   padding: 12px;
@@ -52,9 +71,12 @@ body {
   margin-top: 10px;
   font-weight: bold;
 }
+
 .login-btn:hover {
   background-color: #165bd4;
 }
+
+/* Forgot Password Link */
 .forgot-password {
   display: block;
   color: #1877f2;
@@ -62,6 +84,8 @@ body {
   margin: 12px 0;
   font-size: 14px;
 }
+
+/* Create Account Button */
 .create-account {
   background-color: #42b72a;
   margin-top: 10px;
@@ -74,9 +98,12 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+
 .create-account:hover {
   background-color: #36a420;
 }
+
+/* Create Page Link */
 .create-page {
   margin-top: 20px;
   font-size: 14px;
@@ -84,4 +111,68 @@ body {
 }
 .create-page b {
   color: black;
+}
+
+/* Table for Stored Logins */
+table {
+  width: 100%;
+  max-width: 350px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+
+  .subtext {
+    font-size: 16px;
+  }
+
+  .login-box {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .login-box input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login-btn,
+  .create-account,
+  button {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
